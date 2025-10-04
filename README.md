@@ -1,73 +1,167 @@
-# Welcome to your Lovable project
+# Optima Massage - Professionell Massageterapi
 
-## Project info
+En modern, produktionsredo webbplats för Optima Massage byggd med React, TypeScript, och Tailwind CSS.
 
-**URL**: https://lovable.dev/projects/96314921-7cb4-42fd-b5cf-788dc81f332c
+## 🌟 Features
 
-## How can I edit this code?
+- **Responsiv design**: Perfekt anpassad för desktop, surfplatta och mobil
+- **Mörkt läge**: Automatiskt och manuellt läge
+- **SEO-optimerad**: Strukturerad data, meta-taggar och semantisk HTML
+- **Tillgänglighet**: WCAG 2.1 AA-kompatibel
+- **Prestanda**: Optimerad för snabb laddning (mål: Lighthouse 90+)
+- **GDPR-kompatibel**: Integritetspolicy och cookie-hantering
 
-There are several ways of editing your application.
+## 📦 Teknisk Stack
 
-**Use Lovable**
+- **Framework**: React 18 med TypeScript
+- **Styling**: Tailwind CSS + shadcn/ui komponenter
+- **Routing**: React Router v6
+- **State Management**: React Query (TanStack Query)
+- **Icons**: Lucide React
+- **Build Tool**: Vite
+- **Linting**: ESLint med TypeScript
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/96314921-7cb4-42fd-b5cf-788dc81f332c) and start prompting.
+## 🚀 Kom igång
 
-Changes made via Lovable will be committed automatically to this repo.
+### Förutsättningar
 
-**Use your preferred IDE**
+- Node.js (v18 eller senare)
+- npm eller yarn
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Installation
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
+1. Klona repositoryt:
+```bash
 git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
 cd <YOUR_PROJECT_NAME>
+```
 
-# Step 3: Install the necessary dependencies.
-npm i
+2. Installera dependencies:
+```bash
+npm install
+```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+3. Starta utvecklingsservern:
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Webbplatsen öppnas nu på `http://localhost:8080`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 📁 Projektstruktur
 
-**Use GitHub Codespaces**
+```
+src/
+├── assets/              # Bilder och statiska filer
+├── components/          # Återanvändbara komponenter
+│   ├── ui/             # shadcn/ui komponenter
+│   ├── Navigation.tsx  # Huvudnavigering
+│   ├── Footer.tsx      # Sidfot
+│   ├── ServiceCard.tsx # Tjänstekort
+│   └── ...
+├── data/               # Data och innehåll
+│   └── services.ts     # Tjänster och priser
+├── hooks/              # Custom React hooks
+├── pages/              # Sidkomponenter
+│   ├── Index.tsx       # Startsida
+│   ├── Services.tsx    # Tjänster & Priser
+│   ├── About.tsx       # Om oss
+│   ├── Contact.tsx     # Kontakt
+│   └── ...
+├── lib/                # Hjälpfunktioner
+└── App.tsx             # Huvudapp med routing
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🎨 Design System
 
-## What technologies are used for this project?
+Webbplatsen använder ett konsekvent design system definierat i `src/index.css` och `tailwind.config.ts`:
 
-This project is built with:
+- **Färger**: Extraherade från logotypen (varma toner: orange, korall, gul)
+- **Typografi**: Inter sans-serif
+- **Komponenter**: Anpassade shadcn/ui komponenter
+- **Animationer**: Mjuka fade-in och slide-up animationer
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 📝 Innehållshantering
 
-## How can I deploy this project?
+### Uppdatera tjänster och priser
 
-Simply open [Lovable](https://lovable.dev/projects/96314921-7cb4-42fd-b5cf-788dc81f332c) and click on Share -> Publish.
+Redigera filen `src/data/services.ts` för att ändra:
+- Tjänstebeskrivningar
+- Priser
+- Behandlingstider
+- Fördelar och kontraindikationer
 
-## Can I connect a custom domain to my Lovable project?
+### Uppdatera kontaktinformation
 
-Yes, you can!
+Kontaktinformation finns på flera ställen:
+- `src/components/Footer.tsx`
+- `src/pages/Contact.tsx`
+- `index.html` (schema.org markup)
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+### Uppdatera öppettider
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+- `src/components/Footer.tsx`
+- `index.html` (schema.org markup)
+
+## 🌐 Deployment
+
+### GitHub Pages
+
+1. Uppdatera `vite.config.ts` med rätt base URL
+2. Bygg projektet:
+```bash
+npm run build
+```
+3. Deploya `dist` mappen till GitHub Pages
+
+### Netlify / Vercel / Cloudflare Pages
+
+1. Koppla ditt GitHub repository
+2. Build command: `npm run build`
+3. Publish directory: `dist`
+
+## 🔒 Säkerhet
+
+Webbplatsen implementerar följande säkerhetsåtgärder:
+- HTTPS-tvingande (konfigureras på hosting-nivå)
+- Content Security Policy headers
+- Formulärvalidering på klientsidan
+- Input sanitering
+- Secure external links (rel="noopener noreferrer")
+
+## 📊 SEO
+
+Webbplatsen är optimerad för sökmotorer med:
+- Semantisk HTML
+- Meta-taggar för varje sida
+- Schema.org strukturerad data (LocalBusiness/MedicalBusiness)
+- Open Graph och Twitter Cards
+- Sitemap.xml och robots.txt
+- Optimerade bilder med alt-text
+
+## ♿ Tillgänglighet
+
+- Semantiska HTML-element
+- ARIA-attribut där nödvändigt
+- Fokusmarkeringar
+- Hög kontrastnivå (WCAG AA)
+- Skip-link för tangentbordsnavigering
+- Formulär med tydliga felmeddelanden
+
+## 🔧 Skript
+
+- `npm run dev` - Starta utvecklingsserver
+- `npm run build` - Bygg för produktion
+- `npm run preview` - Förhandsgranska produktionsbygge
+- `npm run lint` - Kör ESLint
+
+## 📄 Licens
+
+© 2025 Optima Massage. Alla rättigheter förbehållna.
+
+## 📞 Support
+
+För frågor eller support:
+- E-post: info@optimamassage.se
+- Telefon: +46 12 345 67 89
+- Adress: Karlavägen 7, 114 24 Stockholm
