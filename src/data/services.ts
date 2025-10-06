@@ -31,9 +31,10 @@ export const services: ServiceData[] = [
       "Öppna sår"
     ],
     durations: [
-      { minutes: 45, price: "650 kr" },
-      { minutes: 60, price: "850 kr" },
-      { minutes: 90, price: "1 200 kr" }
+      { minutes: 20, price: "495 kr" },
+      { minutes: 40, price: "795 kr" },
+      { minutes: 60, price: "995 kr" },
+      { minutes: 80, price: "1 295 kr" }
     ],
     recommendedFrequency: "Varje 2-4 vecka för underhåll"
   },
@@ -55,9 +56,10 @@ export const services: ServiceData[] = [
       "Blodförtunnande medicin"
     ],
     durations: [
-      { minutes: 60, price: "900 kr" },
-      { minutes: 75, price: "1 100 kr" },
-      { minutes: 90, price: "1 300 kr" }
+      { minutes: 20, price: "545 kr" },
+      { minutes: 40, price: "845 kr" },
+      { minutes: 60, price: "1 095 kr" },
+      { minutes: 80, price: "1 395 kr" }
     ],
     recommendedFrequency: "Varje 1-2 vecka vid akuta besvär"
   },
@@ -74,9 +76,10 @@ export const services: ServiceData[] = [
       "Minskad muskelstelhet"
     ],
     durations: [
-      { minutes: 45, price: "700 kr" },
-      { minutes: 60, price: "900 kr" },
-      { minutes: 75, price: "1 100 kr" }
+      { minutes: 20, price: "545 kr" },
+      { minutes: 40, price: "845 kr" },
+      { minutes: 60, price: "1 095 kr" },
+      { minutes: 80, price: "1 395 kr" }
     ],
     recommendedFrequency: "1-2 gånger per vecka vid intensiv träning"
   },
@@ -98,8 +101,10 @@ export const services: ServiceData[] = [
       "Svår högt blodtryck"
     ],
     durations: [
-      { minutes: 45, price: "700 kr" },
-      { minutes: 60, price: "900 kr" }
+      { minutes: 20, price: "495 kr" },
+      { minutes: 40, price: "795 kr" },
+      { minutes: 60, price: "995 kr" },
+      { minutes: 80, price: "1 295 kr" }
     ],
     recommendedFrequency: "Varje 2-3 vecka under graviditeten"
   },
@@ -120,9 +125,10 @@ export const services: ServiceData[] = [
       "Inflammation i behandlingsområdet"
     ],
     durations: [
-      { minutes: 30, price: "500 kr" },
-      { minutes: 45, price: "700 kr" },
-      { minutes: 60, price: "900 kr" }
+      { minutes: 20, price: "545 kr" },
+      { minutes: 40, price: "845 kr" },
+      { minutes: 60, price: "1 095 kr" },
+      { minutes: 80, price: "1 395 kr" }
     ],
     recommendedFrequency: "Varje vecka tills smärtan avtar"
   },
@@ -139,9 +145,10 @@ export const services: ServiceData[] = [
       "Ökar välbefinnande"
     ],
     durations: [
-      { minutes: 60, price: "800 kr" },
-      { minutes: 75, price: "1 000 kr" },
-      { minutes: 90, price: "1 200 kr" }
+      { minutes: 20, price: "495 kr" },
+      { minutes: 40, price: "795 kr" },
+      { minutes: 60, price: "995 kr" },
+      { minutes: 80, price: "1 295 kr" }
     ],
     recommendedFrequency: "Efter behov, ofta 1-2 gånger per månad"
   }

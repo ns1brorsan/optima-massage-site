@@ -36,7 +36,7 @@ const Privacy = () => {
                   Karlavägen 7<br />
                   114 24 Stockholm<br />
                   E-post: info@optimamassage.se<br />
-                  Telefon: +46 12 345 67 89
+                  Telefon: 076-284 14 94
                 </p>
               </CardContent>
             </Card>
@@ -151,7 +151,7 @@ const Privacy = () => {
                 </p>
                 <p>
                   E-post: info@optimamassage.se<br />
-                  Telefon: +46 12 345 67 89
+                  Telefon: 076-284 14 94
                 </p>
               </CardContent>
             </Card>

@@ -62,8 +62,8 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Telefon",
-      content: "+46 12 345 67 89",
-      link: "tel:+46123456789"
+      content: "076-284 14 94",
+      link: "tel:+46762841494"
     },
     {
       icon: Mail,
@@ -291,7 +291,7 @@ const Contact = () => {
           {/* Quick Contact Buttons */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-12">
             <Button variant="default" size="lg" asChild>
-              <a href="tel:+46123456789">
+              <a href="tel:+46762841494">
                 <Phone className="mr-2 h-5 w-5" />
                 Ring oss
               </a>
