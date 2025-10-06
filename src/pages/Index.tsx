@@ -34,24 +34,21 @@ const Index = () => {
 
   const testimonials = [
     {
-      name: "Anna S.",
-      text: "Ivan är fantastisk! Jag kom med fruktansvärd ryggvärk och gick ut som en ny människa. Hans kunskap och teknik är verkligen i världsklass."
+      name: "Stefan J.",
+      text: "Är väldigt nöjd med massagebehandlingen. Rekommenderar starkt."
     },
     {
-      name: "Erik L.",
-      text: "Efter flera år av kronisk nackspänning hittade jag äntligen hjälp hos Optima Massage. Kan varmt rekommendera!"
+      name: "Jelena Z.",
+      text:
+        "Jag är otroligt nöjd med massagen! Ivan var väldigt professionell och skapade en lugn och avslappnande upplevelse. Jag kände mig verkligen omhändertagen under hela behandlingen. Rekommenderas varmt och jag kommer absolut tillbaka!"
     },
     {
-      name: "Maria J.",
-      text: "Professionell, trygg och avslappnande atmosfär. Gravidmassagen var precis vad jag behövde. Tack!"
+      name: "Dace G.",
+      text: "Mycket bra, professionell och lyhörd massör! Rekommenderas!"
     },
     {
-      name: "Johan K.",
-      text: "Som idrottare är regelbunden massage viktigt för min återhämtning. Ivans sportnassage är oslagbar!"
-    },
-    {
-      name: "Sofia M.",
-      text: "Mysigt ställe mitt i stan. Ivan är kunnig och lyssnar verkligen på vad man behöver. Kommer tillbaka!"
+      name: "Andriana M.",
+      text: "Ivan is one the best professionals in Vasastan! Highly recommended :)"
     }
   ];
 
