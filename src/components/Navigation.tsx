@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Sun, Moon } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -26,10 +26,19 @@ export const Navigation = () => {
     }
   }, []);
 
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    setIsOpen(false);
+  }, [location.pathname]);
+
   const toggleDark = () => {
     setIsDark(!isDark);
     document.documentElement.classList.toggle("dark");
   };
+
+  const handleLinkClick = useCallback(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
 
   const navLinks = [
     { to: "/", label: "Hem" },
@@ -57,6 +66,7 @@ export const Navigation = () => {
               <Link
                 key={link.to}
                 to={link.to}
+                onClick={handleLinkClick}
                 className={`font-medium transition-colors relative ${
                   isActive(link.to)
                     ? "text-primary"
@@ -116,7 +126,10 @@ export const Navigation = () => {
                     ? "bg-primary/10 text-primary"
                     : "text-foreground hover:bg-muted"
                 }`}
-                onClick={() => setIsOpen(false)}
+                onClick={() => {
+                  setIsOpen(false);
+                  handleLinkClick();
+                }}
               >
                 {link.label}
               </Link>

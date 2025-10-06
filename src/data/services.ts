@@ -14,142 +14,163 @@ export interface ServiceData {
 
 export const services: ServiceData[] = [
   {
+    id: "idrottsport",
+    title: "Idrott / sport / terapeutisk massage",
+    shortDescription:
+      "Resultatinriktad massage som löser upp stelhet, förbättrar rörlighet och stöttar din återhämtning.",
+    fullDescription:
+      "En kraftfull massage som anpassas efter var du känner spänningar – oavsett om de kommer från träning, vardagsstress eller stillasittande. Behandlingen lindrar stelhet, förebygger skador och ger musklerna ny energi så att du kan prestera och må bättre.",
+    benefits: [
+      "Lindrar stelhet och muskelspänningar",
+      "Ökar rörlighet och smidighet",
+      "Snabbar upp återhämtningen efter träning",
+      "Förebygger belastningsskador",
+      "Ger ny energi och ork"
+    ],
+    durations: [
+      { minutes: 20, price: "449 kr" },
+      { minutes: 50, price: "699 kr" },
+      { minutes: 80, price: "999 kr" }
+    ],
+    recommendedFrequency: "Inför eller efter träning samt vid behov"
+  },
+  {
+    id: "hybridmassage",
+    title: "Hybridmassage – Anpassad för just dina behov",
+    shortDescription:
+      "Flexibel behandling där vi kombinerar tekniker för att skapa din perfekta massageupplevelse.",
+    fullDescription:
+      "Hybridmassage är ett skräddarsytt möte mellan klassisk, terapeutisk och avslappnande massage. Vi lyssnar in din kropp och väljer rätt teknik – från mjuka, lugna rörelser till djupare tryck – för att lösa upp spänningar, minska stress och ge dig total återhämtning.",
+    benefits: [
+      "Personligt anpassad behandling varje gång",
+      "Skapar balans mellan avslappning och djupare arbete",
+      "Ökar cirkulationen och minskar stress",
+      "Mjukar upp ömma och stela områden",
+      "Ger en skräddarsydd upplevelse"
+    ],
+    durations: [
+      { minutes: 20, price: "449 kr" },
+      { minutes: 50, price: "699 kr" },
+      { minutes: 80, price: "999 kr" }
+    ],
+    recommendedFrequency: "När du vill ha en massage som följer dagsformen"
+  },
+  {
     id: "klassisk",
-    title: "Klassisk massage",
-    shortDescription: "Traditionell svensk massage för avslappning och återhämtning.",
-    fullDescription: "Klassisk massage är en mjuk och avslappnande behandling som använder långa, flytande rörelser för att förbättra cirkulationen, minska muskelspänningar och främja djup avkoppling. Perfekt för dig som vill ha en helkroppsbehandling eller fokusera på specifika områden.",
+    title: "Svensk Klassisk Massage",
+    shortDescription:
+      "Lugn och effektiv helkroppsmassage som mjukar upp musklerna och ger djup avkoppling.",
+    fullDescription:
+      "Svensk klassisk massage är perfekt när du vill varva ned och samtidigt få hjälp med spända muskler. Långa, rytmiska grepp förbättrar cirkulationen, minskar stress och lämnar kroppen lättare och mjukare.",
     benefits: [
-      "Förbättrad blodcirkulation",
-      "Minskad muskelspänning",
-      "Ökad flexibilitet",
-      "Stressreducering och avslappning",
-      "Förbättrad sömnkvalitet"
-    ],
-    contraindications: [
-      "Akut inflammation",
-      "Feber",
-      "Öppna sår"
+      "Ger djup avslappning",
+      "Mjukar upp stela muskler",
+      "Förbättrar blodcirkulationen",
+      "Sänker stressnivåer",
+      "Bidrar till bättre sömn"
     ],
     durations: [
-      { minutes: 20, price: "495 kr" },
-      { minutes: 40, price: "795 kr" },
-      { minutes: 60, price: "995 kr" },
-      { minutes: 80, price: "1 295 kr" }
+      { minutes: 20, price: "449 kr" },
+      { minutes: 50, price: "699 kr" },
+      { minutes: 80, price: "999 kr" }
     ],
-    recommendedFrequency: "Varje 2-4 vecka för underhåll"
+    recommendedFrequency: "Varannan till var fjärde vecka eller vid behov"
   },
   {
-    id: "djupgaende",
-    title: "Djupgående massage",
-    shortDescription: "Intensiv behandling för kroniska spänningar och djupa muskelgrupper.",
-    fullDescription: "Djupgående massage arbetar med djupare lager av muskulaturen med hjälp av långsammare rörelser och större tryck. Idealisk för dig med kroniska spänningar, smärta eller för idrottsutövare som behöver intensivare behandling.",
+    id: "spa",
+    title: "SPA massage",
+    shortDescription:
+      "Mjuk, omsorgsfull massage med varm olja som får stressen att smälta bort.",
+    fullDescription:
+      "En spa-inspirerad upplevelse med långa, följsamma rörelser och varm olja. Perfekt när du behöver en paus från vardagen, vill hitta lugn och ge kroppen tid att återhämta sig.",
     benefits: [
-      "Löser upp djupt sittande spänningar",
-      "Lindrar kronisk smärta",
-      "Förbättrar rörligheten",
-      "Återställer muskulär balans",
-      "Förebygger skador"
-    ],
-    contraindications: [
-      "Nyligen opererad",
-      "Osteoporos",
-      "Blodförtunnande medicin"
+      "Djup avslappning för kropp och sinne",
+      "Minskar stress och oro",
+      "Förbättrar återhämtning och sömn",
+      "Ger mjukare hud och bättre cirkulation",
+      "Skapar en lyxig stund för dig själv"
     ],
     durations: [
-      { minutes: 20, price: "545 kr" },
-      { minutes: 40, price: "845 kr" },
-      { minutes: 60, price: "1 095 kr" },
-      { minutes: 80, price: "1 395 kr" }
+      { minutes: 20, price: "449 kr" },
+      { minutes: 50, price: "699 kr" },
+      { minutes: 80, price: "999 kr" }
     ],
-    recommendedFrequency: "Varje 1-2 vecka vid akuta besvär"
-  },
-  {
-    id: "idrott",
-    title: "Idrottsmassage",
-    shortDescription: "Specialiserad massage för aktiva och idrottsutövare.",
-    fullDescription: "Idrottsmassage kombinerar olika tekniker för att förbereda kroppen inför aktivitet, främja återhämtning eller behandla idrottsrelaterade skador. Behandlingen anpassas efter dina specifika behov och träningsintensitet.",
-    benefits: [
-      "Förbättrad prestation",
-      "Snabbare återhämtning",
-      "Skadeförebyggande",
-      "Ökad flexibilitet",
-      "Minskad muskelstelhet"
-    ],
-    durations: [
-      { minutes: 20, price: "545 kr" },
-      { minutes: 40, price: "845 kr" },
-      { minutes: 60, price: "1 095 kr" },
-      { minutes: 80, price: "1 395 kr" }
-    ],
-    recommendedFrequency: "1-2 gånger per vecka vid intensiv träning"
+    recommendedFrequency: "När du behöver återhämtning eller vardagslyx"
   },
   {
     id: "gravid",
-    title: "Gravidmassage",
-    shortDescription: "Skonsam och trygg massage anpassad för gravida.",
-    fullDescription: "Gravidmassage är speciellt utformad för att lindra de vanliga besvären under graviditeten såsom ryggvärk, svullna ben och trötthet. Behandlingen utförs i säkra positioner med särskild hänsyn till din och barnets hälsa.",
+    title: "Gravidmassage – Klassisk eller Terapeutisk",
+    shortDescription:
+      "Skonsam massage som lindrar vanliga graviditetsbesvär och ger kroppen ny energi.",
+    fullDescription:
+      "Gravidmassagen anpassas efter trimester och dina önskemål. Vi arbetar varsamt med att lindra ryggont, svullnad och trötthet samtidigt som du får en stund av lugn och avkoppling.",
     benefits: [
-      "Lindrar rygg- och bäckensmärta",
+      "Lindrar rygg-, höft- och bäckensmärta",
       "Minskar svullnad i ben och fötter",
-      "Förbättrar sömnen",
-      "Reducerar stress och ångest",
-      "Ökar välbefinnandet"
-    ],
-    contraindications: [
-      "Högrisksgraviditet",
-      "Första trimestern (konsultera läkare)",
-      "Svår högt blodtryck"
+      "Ger bättre sömn och avslappning",
+      "Ökar cirkulationen på ett skonsamt sätt",
+      "Ger tid för återhämtning under graviditeten"
     ],
     durations: [
-      { minutes: 20, price: "495 kr" },
-      { minutes: 40, price: "795 kr" },
-      { minutes: 60, price: "995 kr" },
-      { minutes: 80, price: "1 295 kr" }
+      { minutes: 20, price: "449 kr" },
+      { minutes: 50, price: "699 kr" },
+      { minutes: 80, price: "949 kr" }
     ],
-    recommendedFrequency: "Varje 2-3 vecka under graviditeten"
+    recommendedFrequency: "Vid behov under hela graviditeten"
   },
   {
-    id: "triggerpunkt",
-    title: "Triggerpunktsterapi",
-    shortDescription: "Precis behandling av smärtpunkter och muskelknutor.",
-    fullDescription: "Triggerpunktsterapi fokuserar på att hitta och behandla triggerpunkter - små knutor i muskulaturen som orsakar smärta och begränsad rörlighet. Genom precist tryck och stretching löses dessa punkter upp för långvarig smärtlindring.",
+    id: "hotstone",
+    title: "Hot Stone Massage",
+    shortDescription:
+      "Värmande massage där heta stenar och mjuka rörelser släpper på spänningar på djupet.",
+    fullDescription:
+      "Hot stone-massage kombinerar varma lavastenar med behagliga massagegrepp. Värmen mjukar upp musklerna, ökar cirkulationen och ger en omslutande känsla av lugn.",
     benefits: [
-      "Effektiv smärtlindring",
-      "Löser muskelknutor",
-      "Förbättrar rörlighet",
-      "Lindrar huvudvärk och migrän",
-      "Behandlar referred pain"
-    ],
-    contraindications: [
-      "Akut skada",
-      "Inflammation i behandlingsområdet"
+      "Djup avslappning och stresslindring",
+      "Ökar blodcirkulationen",
+      "Löser upp spända muskler",
+      "Ger en varm och trygg upplevelse",
+      "Perfekt när du behöver återhämtning"
     ],
     durations: [
-      { minutes: 20, price: "545 kr" },
-      { minutes: 40, price: "845 kr" },
-      { minutes: 60, price: "1 095 kr" },
-      { minutes: 80, price: "1 395 kr" }
+      { minutes: 50, price: "799 kr" },
+      { minutes: 80, price: "999 kr" },
+      { minutes: 110, price: "1 399 kr" }
     ],
-    recommendedFrequency: "Varje vecka tills smärtan avtar"
+    recommendedFrequency: "När du vill unna dig extra värme och avslappning"
   },
   {
-    id: "avslappning",
-    title: "Avslappningsmassage",
-    shortDescription: "Lugn och skonsam massage för total avkoppling.",
-    fullDescription: "Avslappningsmassage är en mjuk och lugnande behandling som fokuserar på att skapa djup avslappning för både kropp och sinne. Med lätta, rytmiska rörelser och behagligt tryck får du släppa alla spänningar.",
+    id: "koppning",
+    title: "Koppningsmassage",
+    shortDescription:
+      "Traditionell koppning som stimulerar blodcirkulationen och frigör spänningar.",
+    fullDescription:
+      "Med hjälp av vakuumkoppar ökar vi blodflödet, mjukar upp bindväven och hjälper kroppen att släppa på spänningar och slaggprodukter. En effektiv behandling för stela och trötta muskler.",
     benefits: [
-      "Djup mental avslappning",
-      "Minskar stress och ångest",
-      "Förbättrar sömnkvalitet",
-      "Sänker blodtryck",
-      "Ökar välbefinnande"
+      "Stimulerar lymfsystem och blodcirkulation",
+      "Löser upp spända områden",
+      "Kan minska celluliter och vätskeansamling",
+      "Ger mer energi och lättare känsla",
+      "Komplement till annan massage"
     ],
-    durations: [
-      { minutes: 20, price: "495 kr" },
-      { minutes: 40, price: "795 kr" },
-      { minutes: 60, price: "995 kr" },
-      { minutes: 80, price: "1 295 kr" }
+    durations: [{ minutes: 50, price: "799 kr" }],
+    recommendedFrequency: "Som kur eller vid behov"
+  },
+  {
+    id: "maderoterapi",
+    title: "Maderoterapi",
+    shortDescription:
+      "Formande träbehandling som boostar lymfsystemet och ger kroppen ny spänst.",
+    fullDescription:
+      "Maderoterapi utförs med specialdesignade träverktyg som stimulerar lymfsystemet, minskar vätska och hjälper till att forma kroppen. Perfekt för dig som vill arbeta med cirkulation, celluliter och kroppskontur.",
+    benefits: [
+      "Främjar lymfdränage och detox",
+      "Reducerar celluliter och vätskeansamling",
+      "Skulpterar och formar kroppen",
+      "Ger en energigivande känsla",
+      "Kan kombineras med andra behandlingar"
     ],
-    recommendedFrequency: "Efter behov, ofta 1-2 gånger per månad"
+    durations: [{ minutes: 45, price: "1 299 kr" }],
+    recommendedFrequency: "Gärna som kur för bästa resultat"
   }
 ];

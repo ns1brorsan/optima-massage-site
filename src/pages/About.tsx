@@ -28,6 +28,9 @@ const About = () => {
     }
   ];
 
+  const profileImageUrl =
+    "https://cdn.bokadirekt.se/ucdn/52857feb-03c7-45f3-93ac-7d4cd3e97efd/-/quality/better/-/scale_crop/666x416/smart/optima-massage-1";
+
   return (
     <div className="min-h-screen">
       <Navigation />
@@ -45,17 +48,20 @@ const About = () => {
           {/* Main Content */}
           <div className="max-w-5xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-16">
-              {/* Profile Image Placeholder */}
+              {/* Profile Image */}
               <div className="lg:col-span-1">
-                <div className="aspect-square rounded-2xl bg-gradient-warm p-1">
-                  <div className="w-full h-full rounded-xl bg-card flex items-center justify-center">
-                    <div className="text-center p-8">
-                      <div className="w-32 h-32 rounded-full bg-gradient-warm mx-auto mb-4 flex items-center justify-center">
-                        <Users className="h-16 w-16 text-primary-foreground" />
-                      </div>
-                      <h3 className="text-2xl font-bold">Ivan Malbasic</h3>
-                      <p className="text-muted-foreground">Legitimerad massör</p>
-                    </div>
+                <div className="space-y-6">
+                  <div className="aspect-[4/5] rounded-2xl bg-gradient-warm p-1 shadow-soft">
+                    <img
+                      src={profileImageUrl}
+                      alt="Ivan Malbasic behandlar kund hos Optima Massage"
+                      className="w-full h-full object-cover rounded-xl"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className="text-center">
+                    <h3 className="text-2xl font-bold">Ivan Malbasic</h3>
+                    <p className="text-muted-foreground">Legitimerad massör</p>
                   </div>
                 </div>
               </div>

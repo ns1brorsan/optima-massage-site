@@ -3,6 +3,10 @@ import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import logo from "@/assets/optima-logo.jpeg";
 
 export const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <footer className="bg-card border-t border-border mt-20">
       <div className="container mx-auto px-4 py-12">
@@ -18,22 +22,38 @@ export const Footer = () => {
             <h3 className="font-semibold text-foreground mb-4">Snabblänkar</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <Link
+                  to="/"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                  onClick={scrollToTop}
+                >
                   Hem
                 </Link>
               </li>
               <li>
-                <Link to="/tjanster" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <Link
+                  to="/tjanster"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                  onClick={scrollToTop}
+                >
                   Tjänster & Priser
                 </Link>
               </li>
               <li>
-                <Link to="/om-oss" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <Link
+                  to="/om-oss"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                  onClick={scrollToTop}
+                >
                   Om oss
                 </Link>
               </li>
               <li>
-                <Link to="/kontakt" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <Link
+                  to="/kontakt"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                  onClick={scrollToTop}
+                >
                   Kontakt
                 </Link>
               </li>
@@ -87,13 +107,25 @@ export const Footer = () => {
             © {new Date().getFullYear()} Optima Massage. Alla rättigheter förbehållna.
           </p>
           <div className="flex gap-6">
-            <Link to="/integritet" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+            <Link
+              to="/integritet"
+              className="text-sm text-muted-foreground hover:text-primary transition-colors"
+              onClick={scrollToTop}
+            >
               Integritetspolicy
             </Link>
-            <Link to="/cookies" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+            <Link
+              to="/cookies"
+              className="text-sm text-muted-foreground hover:text-primary transition-colors"
+              onClick={scrollToTop}
+            >
               Cookies
             </Link>
-            <Link to="/villkor" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+            <Link
+              to="/villkor"
+              className="text-sm text-muted-foreground hover:text-primary transition-colors"
+              onClick={scrollToTop}
+            >
               Villkor
             </Link>
           </div>
