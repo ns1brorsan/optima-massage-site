@@ -1,8 +1,23 @@
 <!doctype html>
-<html lang="en">
+<html lang="sv">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- GitHub Pages SPA routing support -->
+    <script>
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
+    
     <title>Optima Massage - Professionell Massageterapi i Stockholm</title>
     <meta name="description" content="Legitimerad massör i hjärtat av Stockholm. Klassisk massage, djupgående massage, idrottsmassage, gravidmassage och mer. Boka din tid idag!" />
     <meta name="author" content="Optima Massage" />
