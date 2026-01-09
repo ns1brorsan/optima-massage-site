@@ -56,8 +56,8 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Adress",
-      content: "Karlavägen 7, 114 24 Stockholm",
-      link: "https://www.google.com/maps/search/?api=1&query=Karlavägen+7+Stockholm"
+      content: "Torsgatan 57, 113 37 Stockholm",
+      link: "https://www.google.com/maps/search/?api=1&query=Torsgatan+57+Stockholm"
     },
     {
       icon: Phone,
@@ -222,25 +222,23 @@ const Contact = () => {
               <CardTitle className="text-2xl">Snabbaste vägen hit</CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                {/* Public Transport */}
-                <div className="space-y-4">
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full bg-gradient-warm flex items-center justify-center">
-                      <Bus className="h-5 w-5 text-primary-foreground" />
-                    </div>
-                    <h3 className="font-semibold text-lg">Kollektivtrafik</h3>
-                  </div>
-                  <p className="text-muted-foreground text-sm">
-                    Närmaste hållplats är Karlaplan (T-bana, röda linjen). Därifrån är det ca 3 minuters promenad. 
-                    Även busslinje 4 och 42 stannar i närheten.
-                  </p>
-                  <Button variant="outline" size="sm" className="w-full" asChild>
-                    <a href="https://sl.se/planera-resa" target="_blank" rel="noopener noreferrer">
-                      Planera resa med SL
-                    </a>
-                  </Button>
-                </div>
+<div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+  {/* Public Transport */}
+  <div className="space-y-4">
+    <div className="flex items-center gap-3">
+      <div className="w-10 h-10 rounded-full bg-gradient-warm flex items-center justify-center">
+        <Bus className="h-5 w-5 text-primary-foreground" />
+      </div>
+      <h3 className="font-semibold text-lg">Kollektivtrafik</h3>
+    </div>
+    <p className="text-muted-foreground text-sm">
+      Närmaste station är S:t Eriksplan (Grön linje) eller Odenplan (Grön linje & Pendeltåg). 
+      Därifrån är det ca 5 minuters promenad. Buss 3, 4 och 6 stannar också i närheten.
+    </p>
+    <Button variant="outline" size="sm" className="w-full" asChild>
+      <a href="https://sl.se" target="_blank" rel="noopener noreferrer">Planera resa med SL</a>
+    </Button>
+  </div>
 
                 {/* Car */}
                 <div className="space-y-4">
