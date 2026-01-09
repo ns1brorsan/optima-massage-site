@@ -28,9 +28,10 @@ export const services: ServiceData[] = [
       "Ger ny energi och ork"
     ],
     durations: [
-      { minutes: 20, price: "449 kr" },
-      { minutes: 50, price: "699 kr" },
-      { minutes: 80, price: "999 kr" }
+      { minutes: 20, price: "545 kr" },
+      { minutes: 50, price: "945 kr" },
+      { minutes: 80, price: "1 245 kr" },
+      { minutes: 110, price: "1 645 kr" }
     ],
     recommendedFrequency: "Inför eller efter träning samt vid behov"
   },
@@ -49,9 +50,10 @@ export const services: ServiceData[] = [
       "Ger en skräddarsydd upplevelse"
     ],
     durations: [
-      { minutes: 20, price: "449 kr" },
-      { minutes: 50, price: "699 kr" },
-      { minutes: 80, price: "999 kr" }
+      { minutes: 20, price: "545 kr" },
+      { minutes: 50, price: "945 kr" },
+      { minutes: 80, price: "1 245 kr" },
+      { minutes: 110, price: "1 645 kr" }
     ],
     recommendedFrequency: "När du vill ha en massage som följer dagsformen"
   },
@@ -70,9 +72,10 @@ export const services: ServiceData[] = [
       "Bidrar till bättre sömn"
     ],
     durations: [
-      { minutes: 20, price: "449 kr" },
-      { minutes: 50, price: "699 kr" },
-      { minutes: 80, price: "999 kr" }
+      { minutes: 20, price: "545 kr" },
+      { minutes: 50, price: "945 kr" },
+      { minutes: 80, price: "1 245 kr" },
+      { minutes: 110, price: "1 645 kr" }
     ],
     recommendedFrequency: "Varannan till var fjärde vecka eller vid behov"
   },
@@ -91,9 +94,9 @@ export const services: ServiceData[] = [
       "Skapar en lyxig stund för dig själv"
     ],
     durations: [
-      { minutes: 20, price: "449 kr" },
-      { minutes: 50, price: "699 kr" },
-      { minutes: 80, price: "999 kr" }
+      { minutes: 50, price: "945 kr" },
+      { minutes: 80, price: "1 245 kr" },
+      { minutes: 110, price: "1 645 kr" }
     ],
     recommendedFrequency: "När du behöver återhämtning eller vardagslyx"
   },
@@ -112,9 +115,9 @@ export const services: ServiceData[] = [
       "Ger tid för återhämtning under graviditeten"
     ],
     durations: [
-      { minutes: 20, price: "449 kr" },
-      { minutes: 50, price: "699 kr" },
-      { minutes: 80, price: "949 kr" }
+      { minutes: 20, price: "545 kr" },
+      { minutes: 50, price: "945 kr" },
+      { minutes: 80, price: "1 245 kr" }
     ],
     recommendedFrequency: "Vid behov under hela graviditeten"
   },
@@ -133,44 +136,44 @@ export const services: ServiceData[] = [
       "Perfekt när du behöver återhämtning"
     ],
     durations: [
-      { minutes: 50, price: "799 kr" },
-      { minutes: 80, price: "999 kr" },
-      { minutes: 110, price: "1 399 kr" }
+      { minutes: 50, price: "995 kr" },
+      { minutes: 80, price: "1 395 kr" },
+      { minutes: 110, price: "1 695 kr" }
     ],
     recommendedFrequency: "När du vill unna dig extra värme och avslappning"
   },
   {
-    id: "koppning",
-    title: "Koppningsmassage",
+    id: "detox",
+    title: "Detox & Cirkulationsmassage",
     shortDescription:
-      "Traditionell koppning som stimulerar blodcirkulationen och frigör spänningar.",
+      "En djupgående behandling som stimulerar flödet och hjälper kroppen att rensa ut.",
     fullDescription:
-      "Med hjälp av vakuumkoppar ökar vi blodflödet, mjukar upp bindväven och hjälper kroppen att släppa på spänningar och slaggprodukter. En effektiv behandling för stela och trötta muskler.",
+      "En specialiserad massage som fokuserar på att öka cirkulationen och stötta kroppens naturliga detoxprocesser. Perfekt för att reducera svullnad och ge ny lätthet i kroppen.",
     benefits: [
-      "Stimulerar lymfsystem och blodcirkulation",
-      "Löser upp spända områden",
-      "Kan minska celluliter och vätskeansamling",
-      "Ger mer energi och lättare känsla",
-      "Komplement till annan massage"
+      "Ökar blod- och lymfstatus",
+      "Reducerar vätskeansamlingar",
+      "Främjar utrensning av slaggprodukter",
+      "Ger huden mer lyster och spänst",
+      "Motverkar stelhet i bindväven"
     ],
-    durations: [{ minutes: 50, price: "799 kr" }],
-    recommendedFrequency: "Som kur eller vid behov"
+    durations: [{ minutes: 50, price: "995 kr" }],
+    recommendedFrequency: "Som kur eller när kroppen känns tung och svullen"
   },
   {
-    id: "maderoterapi",
-    title: "Maderoterapi",
+    id: "skräddarsydd-lyx",
+    title: "Skräddarsydd LYX – Kundens Val",
     shortDescription:
-      "Formande träbehandling som boostar lymfsystemet och ger kroppen ny spänst.",
+      "Vår mest exklusiva behandling där du får totalt fokus och maximal återhämtning.",
     fullDescription:
-      "Maderoterapi utförs med specialdesignade träverktyg som stimulerar lymfsystemet, minskar vätska och hjälper till att forma kroppen. Perfekt för dig som vill arbeta med cirkulation, celluliter och kroppskontur.",
+      "En generös behandlingstid på 140 minuter där vi kombinerar de allra bästa teknikerna helt efter dina önskemål. En komplett upplevelse för både kropp och själ.",
     benefits: [
-      "Främjar lymfdränage och detox",
-      "Reducerar celluliter och vätskeansamling",
-      "Skulpterar och formar kroppen",
-      "Ger en energigivande känsla",
-      "Kan kombineras med andra behandlingar"
+      "Maximal tid för djupgående arbete",
+      "Fullständig avslappning",
+      "Kombination av flera massagetekniker",
+      "Personligt anpassat in i minsta detalj",
+      "Den ultimata återhämtningen"
     ],
-    durations: [{ minutes: 45, price: "1 299 kr" }],
-    recommendedFrequency: "Gärna som kur för bästa resultat"
+    durations: [{ minutes: 140, price: "2 345 kr" }],
+    recommendedFrequency: "När du behöver en total nollställning"
   }
 ];
