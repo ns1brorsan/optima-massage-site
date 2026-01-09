@@ -16,23 +16,33 @@ export const services: ServiceData[] = [
   {
     id: "idrottsport",
     title: "Idrott / sport / terapeutisk massage",
-    shortDescription: "Resultatinriktad massage som löser upp stelhet och stöttar återhämtning.",
+    shortDescription: "Resultatinriktad massage som löser upp stelhet och stöttar din återhämtning.",
     fullDescription: "En kraftfull massage som anpassas efter var du känner spänningar. Behandlingen lindrar stelhet, förebygger skador och ger musklerna ny energi.",
-    benefits: ["Lindrar muskelspänningar", "Ökar rörlighet", "Snabbar upp återhämtning", "Förebygger skador"],
+    benefits: [
+      "Lindrar stelhet och muskelspänningar",
+      "Ökar rörlighet och smidighet",
+      "Snabbar upp återhämtningen efter träning",
+      "Förebygger belastningsskador"
+    ],
     durations: [
       { minutes: 20, price: "545 kr" },
       { minutes: 50, price: "945 kr" },
       { minutes: 80, price: "1 245 kr" },
       { minutes: 110, price: "1 645 kr" }
     ],
-    recommendedFrequency: "Vid behov eller i samband med träning"
+    recommendedFrequency: "Inför eller efter träning samt vid behov"
   },
   {
     id: "hybridmassage",
     title: "Hybridmassage – Anpassad för just dina behov",
-    shortDescription: "Flexibel behandling där vi kombinerar tekniker för din perfekta upplevelse.",
-    fullDescription: "En skräddarsydd kombination av klassisk, terapeutisk och avslappnande massage baserat på din kropps status.",
-    benefits: ["Personligt anpassad", "Minskar stress", "Ökar cirkulationen", "Djupgående avslappning"],
+    shortDescription: "Flexibel behandling där vi kombinerar tekniker för din perfekta massageupplevelse.",
+    fullDescription: "Hybridmassage är ett skräddarsytt möte mellan klassisk, terapeutisk och avslappnande massage baserat på din kropps aktuella behov.",
+    benefits: [
+      "Personligt anpassad behandling",
+      "Balans mellan avslappning och djupare arbete",
+      "Minskar stress",
+      "Ökar cirkulationen"
+    ],
     durations: [
       { minutes: 20, price: "545 kr" },
       { minutes: 50, price: "945 kr" },
@@ -43,9 +53,14 @@ export const services: ServiceData[] = [
   {
     id: "klassisk",
     title: "Svensk Klassisk Massage",
-    shortDescription: "Lugn och effektiv massage som mjukar upp musklerna och ger avkoppling.",
-    fullDescription: "Klassisk massage med långa, rytmiska grepp som förbättrar cirkulationen och sänker stressnivåerna.",
-    benefits: ["Djup avslappning", "Mjukar upp stela muskler", "Förbättrar sömn", "Sänker stress"],
+    shortDescription: "Lugn och effektiv massage som mjukar upp musklerna och ger djup avkoppling.",
+    fullDescription: "Klassisk massage med rytmiska grepp som förbättrar cirkulationen, minskar stress och lämnar kroppen mjukare.",
+    benefits: [
+      "Ger djup avslappning",
+      "Mjukar upp stela muskler",
+      "Förbättrar blodcirkulationen",
+      "Sänker stressnivåer"
+    ],
     durations: [
       { minutes: 20, price: "545 kr" },
       { minutes: 50, price: "945 kr" },
@@ -57,8 +72,13 @@ export const services: ServiceData[] = [
     id: "spa",
     title: "SPA massage",
     shortDescription: "Mjuk massage med varm olja som får stressen att smälta bort.",
-    fullDescription: "En lyxig upplevelse med fokus på lugn och återhämtning med hjälp av varma oljor.",
-    benefits: ["Total avkoppling", "Minskar oro", "Mjukare hud", "Vardagslyx"],
+    fullDescription: "En lyxig och avslappnande upplevelse med långa, följsamma rörelser och varm olja för total återhämtning.",
+    benefits: [
+      "Total avkoppling för kropp och sinne",
+      "Minskar stress och oro",
+      "Förbättrar sömnen",
+      "Vardagslyx"
+    ],
     durations: [
       { minutes: 50, price: "945 kr" },
       { minutes: 80, price: "1 245 kr" },
@@ -69,8 +89,13 @@ export const services: ServiceData[] = [
     id: "gravid",
     title: "Gravidmassage – Klassisk eller Terapeutisk",
     shortDescription: "Skonsam massage som lindrar vanliga graviditetsbesvär.",
-    fullDescription: "Anpassad behandling som lindrar ryggont och svullnad under graviditetens olika stadier.",
-    benefits: ["Lindrar bäckensmärta", "Minskar svullnad", "Bättre sömn", "Trygg miljö"],
+    fullDescription: "Anpassad behandling som lindrar ryggont, svullnad och trötthet under graviditetens olika stadier.",
+    benefits: [
+      "Lindrar rygg- och bäckensmärta",
+      "Minskar svullnad i ben och fötter",
+      "Bättre sömn",
+      "Trygg och avslappnad miljö"
+    ],
     durations: [
       { minutes: 20, price: "545 kr" },
       { minutes: 50, price: "945 kr" },
@@ -80,9 +105,14 @@ export const services: ServiceData[] = [
   {
     id: "hotstone",
     title: "Hot Stone Massage",
-    shortDescription: "Värmande massage med heta stenar som löser spänningar på djupet.",
-    fullDescription: "Kombination av varma lavastenar och massagegrepp för en omslutande känsla av lugn.",
-    benefits: ["Djup värme", "Löser upp spänningar", "Ökad blodcirkulation", "Stresslindring"],
+    shortDescription: "Värmande massage där heta stenar löser på spänningar på djupet.",
+    fullDescription: "Kombinerar varma lavastenar med mjuka massagegrepp för en omslutande känsla av lugn och värme.",
+    benefits: [
+      "Djup avslappning",
+      "Ökar blodcirkulationen",
+      "Löser upp spända muskler",
+      "Perfekt för kalla dagar"
+    ],
     durations: [
       { minutes: 50, price: "995 kr" },
       { minutes: 80, price: "1 395 kr" },
@@ -93,16 +123,28 @@ export const services: ServiceData[] = [
     id: "koppning",
     title: "Koppningsmassage",
     shortDescription: "Vakuumkoppar som stimulerar cirkulationen och frigör spänningar.",
-    fullDescription: "Effektiv behandling som mjukar upp bindväven och hjälper kroppen att rensa ut slaggprodukter.",
-    benefits: ["Ökat lymfflöde", "Reducerar vätska", "Löser bindvävsspänningar", "Energigivande"],
-    durations: [{ minutes: 50, price: "945 kr" }]
+    fullDescription: "Med hjälp av koppar ökar vi blodflödet och mjukar upp bindväven för att rensa ut slaggprodukter.",
+    benefits: [
+      "Stimulerar lymfsystemet",
+      "Löser upp djupa spänningar",
+      "Minskar vätskeansamling",
+      "Ger en lättare känsla i kroppen"
+    ],
+    durations: [
+      { minutes: 50, price: "945 kr" }
+    ]
   },
   {
     id: "maderoterapi",
     title: "Maderoterapi (Trämassage)",
-    shortDescription: "Formande behandling som boostar lymfsystemet och ger ny spänst.",
-    fullDescription: "Träverktyg används för att skulptera kroppen och reducera celluliter på ett naturligt sätt.",
-    benefits: ["Lymfdränage", "Reducerar celluliter", "Formar kroppen", "Naturlig metod"],
+    shortDescription: "Formande träbehandling som boostar lymfsystemet och ger ny spänst.",
+    fullDescription: "Specialdesignade träverktyg används för att skulptera kroppen, minska celluliter och boosta cirkulationen.",
+    benefits: [
+      "Främjar lymfdränage",
+      "Reducerar celluliter",
+      "Skulpterar och formar kroppen",
+      "Naturlig metod för spänst"
+    ],
     durations: [
       { minutes: 50, price: "1 150 kr" },
       { minutes: 80, price: "1 450 kr" }
@@ -112,16 +154,30 @@ export const services: ServiceData[] = [
     id: "detox",
     title: "Detox & Cirkulationsmassage",
     shortDescription: "Djupgående behandling som stimulerar flödet och rensar ut.",
-    fullDescription: "Fokuserar på att stötta kroppens naturliga detox och minska svullnad.",
-    benefits: ["Minskar svullnad", "Stöttar utrensning", "Lyster i huden", "Lättare känsla"],
-    durations: [{ minutes: 50, price: "995 kr" }]
+    fullDescription: "Specialiserad massage för att öka cirkulationen och stötta kroppens naturliga utrensningsprocesser.",
+    benefits: [
+      "Minskar svullnad",
+      "Stöttar detox",
+      "Ger huden mer lyster",
+      "Motverkar stelhet"
+    ],
+    durations: [
+      { minutes: 50, price: "995 kr" }
+    ]
   },
   {
     id: "skräddarsydd-lyx",
     title: "Skräddarsydd LYX – Kundens Val",
     shortDescription: "Vår mest exklusiva behandling för total återhämtning.",
-    fullDescription: "Hela 140 minuter där vi kombinerar de tekniker du önskar för en total nollställning.",
-    benefits: ["Maximal tid", "Skräddarsydd plan", "Total avslappning", "Exklusiv upplevelse"],
-    durations: [{ minutes: 140, price: "2 345 kr" }]
+    fullDescription: "Hela 140 minuter där vi kombinerar de allra bästa teknikerna helt efter dina önskemål.",
+    benefits: [
+      "Maximal tid för återhämtning",
+      "Fullständigt personligt anpassad",
+      "Total avslappning",
+      "Den ultimata lyxen"
+    ],
+    durations: [
+      { minutes: 140, price: "2 345 kr" }
+    ]
   }
 ];
