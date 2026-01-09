@@ -63,10 +63,10 @@ export const Footer = () => {
           <div>
             <h3 className="font-semibold text-foreground mb-4">Kontaktuppgifter</h3>
             <ul className="space-y-3">
-              <li className="flex items-start gap-2 text-sm text-muted-foreground">
-                <MapPin className="h-4 w-4 mt-0.5 text-primary flex-shrink-0" />
-                <span>Karlavägen 7, 114 24 Stockholm</span>
-              </li>
+            <li className="flex items-start gap-2 text-sm text-muted-foreground">
+              <MapPin className="h-4 w-4 mt-0.5 text-primary flex-shrink-0" />
+              <span>Torsgatan 57, 113 37 Stockholm</span>
+            </li>
               <li className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Phone className="h-4 w-4 text-primary flex-shrink-0" />
                 <a href="tel:+46762841494" className="hover:text-primary transition-colors">
